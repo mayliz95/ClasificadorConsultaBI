@@ -1,0 +1,62 @@
+POST _reindex
+{
+  "source": {
+    "index": "solo_consulta",
+    "type": "_doc",
+      "query": {
+    "bool": {
+      "should": [
+        {
+          "match_phrase": {
+            "text": "todono"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "7vecesno"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "dilesno"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "vota no"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "no y mil veces no"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "NO a las mafias"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "no y 7 veces no"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "EcuadorDiceNO"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "NO a la Consulta"
+          }
+        }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+},
+  "dest": {
+    "index": "votono"
+  }
+}
