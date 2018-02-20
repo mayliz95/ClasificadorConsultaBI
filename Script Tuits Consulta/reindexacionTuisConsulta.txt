@@ -1,0 +1,157 @@
+POST _reindex
+{
+  "source": {
+    "index": "consulta_popular",
+    "type": "_doc",
+    "query": {
+    "bool": {
+      "should": [
+        {
+          "match_phrase": {
+            "text": "consulta"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "vota"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "popular"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "referendum"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "ConsultaPopular"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "ConsultaPopular2018"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "consulta2018"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "Consulta Popular"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "DerechoAlVoto"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "ConsultaPopularEc"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "EcuadorSaleAVotar"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "7VecesSi"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "ConsultaEc"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "EcuadorDiceS"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "PichinchaDiceS"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "7VecesS"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "EcuadorDiceNO"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "votado"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "dilesno"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "EcuadorLesDiceNO"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "YoVotoNO"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "ATuFuturoDileS"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "votaconresponsabilidad"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "Cuenca7VecesS"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "Si7VecesSi"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "votaciones"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "7vecesno"
+          }
+        },
+        {
+          "match_phrase": {
+            "text": "EcuadorSaleAVota"
+          }
+        }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+  },
+  "dest": {
+    "index": "solo_consulta"
+  }
+}
