@@ -1,0 +1,5 @@
+function(doc) 
+{
+  if(doc.lang=="es"&&(doc.place.name=="Quito"||doc.place.name=="Cuenca"||doc.place.name=="Guayaquil"))
+    emit(null,doc);
+}
