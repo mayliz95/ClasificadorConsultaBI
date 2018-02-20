@@ -1,0 +1,38 @@
+PUT votosi
+{
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "extended_tweet": {
+          "properties": {
+            "full_text": {
+              "type": "text"              				
+            }                                                     }
+        },                            
+        "created_at": {
+          "format": "EEEE MMM dd HH:mm:ss yyyy||dd/MM/yyyy||dd-MM-yyyy||date_optional_time",
+          "type": "date"
+        },                
+        "place": {
+          "properties": {
+            "country": {
+              "type": "text"
+            },
+            "name": {
+              "type": "text"
+            }                        
+          }
+        },
+        "text": {
+          "type": "text"
+        },
+        "lang": {
+          "type": "text"
+        },
+        "location": {
+          "type": "geo_point"
+        }
+      }
+    }
+  }
+}

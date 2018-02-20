@@ -1,0 +1,62 @@
+POST _reindex
+{
+  "source": {
+    "index": "solo_consulta",
+    "type": "_doc",
+    "query": {
+      "bool": {
+        "minimum_should_match": 1,
+        "should": [
+          {
+            "match_phrase": {
+              "text": "7vecesi"
+            }
+          },
+          {
+            "match_phrase": {
+              "text": "ecuadorvotas"
+            }
+          },
+          {
+            "match_phrase": {
+              "text": "Si7VecesSi"
+            }
+          },
+          {
+            "match_phrase": {
+              "text": "ATuFuturoDileS"
+            }
+          },
+          {
+            "match_phrase": {
+              "text": "Cuenca7VecesS"
+            }
+          },
+          {
+            "match_phrase": {
+              "text": "7VecesS"
+            }
+          },
+          {
+            "match_phrase": {
+              "text": "cuadorDiceS"
+            }
+          },
+          {
+            "match_phrase": {
+              "text": "PichinchaDiceS"
+            }
+          },
+          {
+            "match_phrase": {
+              "text": "7VecesSi"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "dest": {
+    "index": "votosi"
+  }
+}
