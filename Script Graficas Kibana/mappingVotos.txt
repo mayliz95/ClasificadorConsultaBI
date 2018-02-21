@@ -1,0 +1,42 @@
+PUT votos
+{
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "voto": {
+          "type": "keyword"
+        },
+        "created_at": {
+          "type": "date",
+          "format": "EEEE MMM dd HH:mm:ss yyyy||dd/MM/yyyy||dd-MM-yyyy||date_optional_time"
+        },
+        "extended_tweet": {
+          "properties": {
+            "full_text": {
+              "type": "text"
+            }
+          }
+        },
+        "lang": {
+          "type": "text"
+        },
+        "location": {
+          "type": "geo_point"
+        },
+        "place": {
+          "properties": {
+            "country": {
+              "type": "text"
+            },
+            "name": {
+              "type": "text"
+            }
+          }
+        },
+        "text": {
+          "type": "text"
+        }
+      }
+    }
+  }
+}
