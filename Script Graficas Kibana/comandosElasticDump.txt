@@ -1,0 +1,2 @@
+elasticdump --input=http://localhost:9200/votosi --output=/home/ubuntu/Documentos/backup/votosi/datossi.json --type=data
+elasticdump --input=http://localhost:9200/votono --output=/home/ubuntu/Documentos/backup/votosi/datosno.json --type=data
