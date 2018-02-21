@@ -1,9 +1,9 @@
-#ESCUELA POLITÉCNICA NACIONAL 
-
-#FACULTAD DE INGENIERÍA DE SISTEMAS
-
-#INTELIGENCIA DE NEGOCIOS
-
+ESCUELA POLITÉCNICA NACIONAL 
+==========
+FACULTAD DE INGENIERÍA DE SISTEMAS
+==========
+INTELIGENCIA DE NEGOCIOS
+==========
 Objetivo General:
 ==========
  Implementar e investigar el funcionamiento de un clasificador de sentimientos utilizando los algoritmos de aprendizaje vistos en clase y los datos recolectados de Twitter para identificar tendencias de opinión en las 3 ciudades más importantes del país por el tema de “CONSULTA POPULAR” del domingo 4 de febrero de 2018. 
