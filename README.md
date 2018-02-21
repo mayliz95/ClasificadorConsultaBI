@@ -108,11 +108,12 @@ Análisis
 
 Es necesario realizar un análisis sobre el texto de cada tweet, para minar la opinión pública de las 3 ciudades. En este caso se deberá diseñar un clasificador en español que permita identificar la tendencia del voto por el sí o por el no. 
 
-- Obtener tuits que tienen tendencia a si con los [Scripts] (https://github.com/mayliz95/ClasificadorConsultaBI/tree/master/Scripts%20Tuits%20Votos/VotaSi)
+- Obtener tuits que tienen tendencia a si con los [Script](https://github.com/mayliz95/ClasificadorConsultaBI/tree/master/Scripts%20Tuits%20Votos/VotaSi)
 
-- Obtener tuits que tienen tendencia a no con los [Scripts](https://github.com/mayliz95/ClasificadorConsultaBI/tree/master/Scripts%20Tuits%20Votos/VotaNo)
+- Obtener tuits que tienen tendencia a no con los 
+[Scripts](https://github.com/mayliz95/ClasificadorConsultaBI/tree/master/Scripts%20Tuits%20Votos/VotaNo)
 
-- Obtener Json con contenido de índices no y si, se ejecuta en el terminal los [comandos] (https://github.com/mayliz95/ClasificadorConsultaBI/blob/master/Script%20Graficas%20Kibana/comandosElasticDump.txt) de elasticdump
+- Obtener Json con contenido de índices no y si, se ejecuta en el terminal los [comandos](https://github.com/mayliz95/ClasificadorConsultaBI/blob/master/Script%20Graficas%20Kibana/comandosElasticDump.txt) de elasticdump
 
 - Formatear el contenido de los archivos json, para el [no](https://github.com/mayliz95/ClasificadorConsultaBI/blob/master/Script%20Graficas%20Kibana/formatearContenidojsonNO.py) y para el [si](https://github.com/mayliz95/ClasificadorConsultaBI/blob/master/Script%20Graficas%20Kibana/formatearContenidojsonSI.py)
 
